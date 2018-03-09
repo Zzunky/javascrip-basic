@@ -6,60 +6,27 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>JavaScipt</title>
 <link type="text/css" href="css/sty.css" rel="stylesheet"/>
+	<scrip type="text/javascrip" src="js/jvs.js">
 </head>
 <body class="text-center">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <h1>Change Text Content</h1>
-<script>
-		function firstContent()
-	{
-		x=document.getElementById("demo");
-		x.innerHTML="Able was I ere I saw Elba.";
-	}
-		function changeContent()
-	{
-		x=document.getElementById("demo");
-		x.innerHTML="Elba saw I ere I was Able";
-	}
-	</script>
+
 <p id="demo">Able was I ere I saw Elba.</p>
 <button type="button" onclick="firstContent()" class="btn btn-primary">Before</button>
 <button type="button" onclick="changeContent()" class="btn btn-info">After</button>
 <br/><br/>
 <hr style="width: 550px; height:5px;border:none;border-top:1px solid #555555;" />
+	
 <h1> Change The Text Size Or The Font</h1>
-<script>
-	function changeStyle()
-	{
-	x=document.getElementById("intro1");
-	y=document.getElementById("intro2");
-	x.style.color="coral";
-	x.style.fontSize="20px";
-	y.style.color="khaki";
-	y.style.fontSize="14px";
-	}
-</script>
 <p id="intro1">Real rock wall, real rock wall, real rock wall.</p>
 <p id="intro2">Lily ladles little Letty's lentil soup.</p>
 <button type="button" onclick="changeStyle()" class="btn btn-primary">change style</button>
 <br/><br/>
 <hr style="width: 370px; height:5px;border:none;border-top:1px solid #555555;" />
+	
 <h1>Change Display Picture</h1>
-<script>
-	function changeImage()
-	{
-	element=document.getElementById("myimage")
-	if(element.src.match("bllubon"))
-	{
-		element.src="images/blluboff.gif";
-	}
-	else
-	{
-		element.src="images/bllubon.gif";
-		}
-	}		
-</script>
 <img id="myimage" src="images/blluboff.gif" onclick="changeImage()" />
 <p>Click on the bulb to turn on or off the lamp.</p>
 <br/><br/>
@@ -68,20 +35,6 @@
 <p>Please enter the number, if not the number,interface will pop-up window tips.</p>
 <input id="txtbox1" type="text" style="color:black"  placeholder="input number" required>
 </br>
-<script>
-function checkFun()
-{
-	var x=document.getElementById("txtbox1").value;
-	if(x==""||isNaN(x))         //isNaN() isdigit
-	{
-		alert("That's not a number");
-	}
-	else
-        {
-                alert("The input result is"+x);
-        }
-}
-</script>
 </br>
 <button type="button" onclick="checkFun()" class="btn btn-primary">Number Validator</button>
 
