@@ -3,12 +3,12 @@ function firstContent()
 		x=document.getElementById("demo");
 		x.innerHTML="Able was I ere I saw Elba.";
 	}
-		function changeContent()
+function changeContent()
 	{
 		x=document.getElementById("demo");
 		x.innerHTML="Elba saw I ere I was Able";
 	}
-		function changeStyle()
+function changeStyle()
 	{
 	x=document.getElementById("intro1");
 	y=document.getElementById("intro2");
@@ -17,7 +17,7 @@ function firstContent()
 	y.style.color="khaki";
 	y.style.fontSize="14px";
 	}
-	function changeImage()
+function changeImage()
 	{
 	element=document.getElementById("myimage")
 	if(element.src.match("bllubon"))
@@ -29,8 +29,8 @@ function firstContent()
 		element.src="images/bllubon.gif";
 		}
 	}	
-	function checkFun()
-{
+function checkFun()
+	{
 	var x=document.getElementById("txtbox1").value;
 	if(x==""||isNaN(x))         //isNaN() isdigit
 	{
