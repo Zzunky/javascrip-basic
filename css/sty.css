@@ -4,3 +4,9 @@
 	font-size:16px;
 	background-color:#333333;
 	}
+	hr{
+	width: 370px; 
+	height:5px;
+	border:none;
+	border-top:1px solid #555555;
+	}
